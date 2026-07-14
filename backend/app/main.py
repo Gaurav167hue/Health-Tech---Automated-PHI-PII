@@ -8,7 +8,7 @@ app = FastAPI(
 )
 
 app.include_router(redaction_router)
-)
+
 
 
 @app.get("/")
