@@ -14,3 +14,14 @@ class RedactionService:
             "redacted_text": text,
             "status": "success"
         }
+
+    @staticmethod
+    def restore_text(text: str):
+
+        if not text.strip():
+            invalid_request("Input text cannot be empty.")
+
+        return {
+            "restored_text": text,
+            "status": "success"
+        }
