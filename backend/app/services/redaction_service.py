@@ -1,5 +1,6 @@
 from app.exceptions import invalid_request
 from app.logger import logger
+from app.services.nlp_service import NLPService
 
 
 class RedactionService:
@@ -12,9 +13,11 @@ class RedactionService:
         if not text.strip():
             invalid_request("Input text cannot be empty.")
 
+        redacted = NLPService.redact(text)
+
         return {
             "original_text": text,
-            "redacted_text": text,
+            "redacted_text": redacted,
             "status": "success"
         }
 
