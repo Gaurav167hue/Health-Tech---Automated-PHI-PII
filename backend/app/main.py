@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from app.exception_handler import register_exception_handlers
 from app.routes.redaction import router as redaction_router
 from app.config import settings
 from fastapi.middleware.cors import CORSMiddleware
@@ -19,6 +20,7 @@ app.add_middleware(
 
 
 app.include_router(redaction_router)
+register_exception_handlers(app)
 
 
 
