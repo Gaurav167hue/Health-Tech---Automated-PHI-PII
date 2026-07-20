@@ -28,9 +28,11 @@ Responsibilities
    2. Dictionary /JSON
    3. Redis
 
-<!-- | Date    | Activity                                   | Commit                                                    |
-| ------- | ------------------------------------------ | --------------------------------------------------------- |
-| July 20 | Day 8 - Fundamental Regex Pattern Research | docs: add regex learning examples and validation patterns |
+| Date    | Activity                                                                    | Commit                                                                      |
+| ------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| July 27 | Day 17 - Learn Pseudonymization & Token Mapping Concepts and buil dumy data | docs: add pseudonymization and token mapping study notes and buil dumy data |
+
+<!--
 | July 21 | Day 9 - Email Detection Module             | feat: implement email detection using regex               | -->
 
 <!--
