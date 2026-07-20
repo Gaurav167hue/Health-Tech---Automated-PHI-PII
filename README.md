@@ -11,9 +11,9 @@ Technologiesssss
 5. Regex
 6. Redis
 
-## 📅 Week 2 — Regex Detection
+# 📅 Week 3 — Mapping Engine
 
-**July 20 – July 27, 2026**
+**July 27 – Agustus 2, 2026**
 
 Responsibilities
 
@@ -27,10 +27,6 @@ Responsibilities
    1. Python
    2. Dictionary /JSON
    3. Redis
-
-# 📅 Week 3 — Mapping Engine
-
-**July 27 – Agustus 2, 2026**
 
 <!-- | Date    | Activity                                   | Commit                                                    |
 | ------- | ------------------------------------------ | --------------------------------------------------------- |
