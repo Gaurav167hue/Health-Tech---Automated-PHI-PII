@@ -7,6 +7,9 @@ from app.schemas.request_response import (
 )
 from app.services.redaction_service import RedactionService
 
+# service dumy data
+from app.services.pseudonym_service import replace_sensitive_data
+
 router = APIRouter(
     prefix="/api/v1",
     tags=["Redaction"]

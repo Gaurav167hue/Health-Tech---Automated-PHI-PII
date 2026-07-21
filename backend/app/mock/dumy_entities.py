@@ -1,14 +1,14 @@
 DUMMY_ENTITIES = [
     {
         "type": "PERSON",
-        "text": "John Smith"
+        "text": "Reyhan Rafaidhil"
     },
     {
         "type": "PHONE",
-        "text": "08123456789"
+        "text": "0895803788440"
     },
     {
         "type": "EMAIL",
-        "text": "john@gmail.com"
+        "text": "reyhanrafaidhil1126@gmail.com"
     }
 ]
