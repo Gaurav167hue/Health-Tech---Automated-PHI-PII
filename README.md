@@ -28,12 +28,10 @@ Responsibilities
    2. Dictionary /JSON
    3. Redis
 
-| Date    | Activity                                                                    | Commit                                                                      |
-| ------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| July 27 | Day 17 - Learn Pseudonymization & Token Mapping Concepts and buil dumy data | docs: add pseudonymization and token mapping study notes and buil dumy data |
-
-<!--
-| July 21 | Day 9 - Email Detection Module             | feat: implement email detection using regex               | -->
+| Date    | Activity                                                                     | Commit                                                                       |
+| ------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| July 27 | Day 17 - Learn Pseudonymization & Token Mapping Concepts and build dumy data | docs: add pseudonymization and token mapping study notes and build dumy data |
+| July 28 | Day 18 - Implement Sensitive Data Replacement                                | feat: implement sensitive data replacement with pseudonymizarion             |
 
 <!--
 | June 15 | Day 9 - GitHub Actions              | docs: github actions notes                                    |
