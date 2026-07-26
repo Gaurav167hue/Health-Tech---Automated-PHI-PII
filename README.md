@@ -31,10 +31,10 @@ Responsibilities
 | Date    | Activity                                                                     | Commit                                                                       |
 | ------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
 | July 27 | Day 17 - Learn Pseudonymization & Token Mapping Concepts and build dumy data | docs: add pseudonymization and token mapping study notes and build dumy data |
-| July 28 | Day 18 - Implement Sensitive Data Replacement                                | feat: implement sensitive data replacement with pseudonymizarion             |
+| July 28 | Day 18 - Implement Sensitive Data Replacement                                | feat: implement sensitive data replacement with pseudonymization             |
+| July 29 | Day 19 - Implement Token Mapping and Mapping Dictionary                      | feat: implement token mapping using dictionary                               |
 
 <!--
-| June 15 | Day 9 - GitHub Actions              | docs: github actions notes                                    |
 | June 16 | Day 10 - Build GitHub Actions       | feat: add first github action                                 |
 | June 17 | Day 11 - GitHub Secrets             | feat: configure github secrets                                |
 | June 18 | Day 12 - GitHub Actions Integration | feat: automate firmware signing                               |
