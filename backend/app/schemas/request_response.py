@@ -40,6 +40,13 @@ class RestoreRequest(BaseModel):
 
 
 class RestoreResponse(BaseModel):
+    token_mapping: dict[str, str] = Field(
+        example={
+            "PERSON_001": "John Smith",
+            "DATE_001": "12/07/2026",
+            "HOSPITAL_001": "AIIMS Delhi"
+        }
+    )
     restored_text: str = Field(
         example="John Smith visited AIIMS Delhi."
     )

@@ -437,7 +437,7 @@ import re
 from app.database.redis_client import redis_client
 from app.repositories.token_repositories import TokenRepository
 
-TOKEN_PATTERN = r"[A-Z]+_\d{3}"
+TOKEN_PATTERN = r"\b[A-Z]+_\d{3}\b"
 token_repository = TokenRepository()
 
 
@@ -548,6 +548,23 @@ def build_mapping(original_text, template_text):
         original_cursor = end
     return mapping
 
+# ==========================================
+# Restore
+# Regex Token Matching
+# ==========================================
+def restore_sensitive_data(redacted_text):
+    def replace_token(match):
+        token = match.group()
+        value = token_repository.get(token)
+        if value is not None:
+            return value
+        return token
+    restored_text = re.sub(
+        TOKEN_PATTERN,
+        replace_token,
+        redacted_text
+    )
+    return restored_text
 
 # ==========================================
 # Wrapper
@@ -560,7 +577,7 @@ def replace_sensitive_data(text, data):
         )
 
         token_repository.save_many(
-            mapping
+            mapping,
         )
 
         return (
@@ -581,14 +598,33 @@ def replace_sensitive_data(text, data):
         )
 
         token_repository.save_many(
-            mapping
+            mapping,
         )
 
         return (
             redacted,
             mapping
         )
-
     raise ValueError(
         "Unsupported data format"
     )
+
+# ==========================================
+# Restore
+# Regex Token Matching
+# ==========================================
+def restore_sensitive_data(redacted_text):
+    tokens = re.findall(
+        TOKEN_PATTERN,
+        redacted_text
+    )
+    token_mapping = token_repository.get_many(
+        tokens
+    )
+    restored_text = redacted_text
+    for token, value in token_mapping.items():
+        restored_text = restored_text.replace(
+            token,
+            value
+        )
+    return restored_text, token_mapping
