@@ -549,24 +549,6 @@ def build_mapping(original_text, template_text):
     return mapping
 
 # ==========================================
-# Restore
-# Regex Token Matching
-# ==========================================
-def restore_sensitive_data(redacted_text):
-    def replace_token(match):
-        token = match.group()
-        value = token_repository.get(token)
-        if value is not None:
-            return value
-        return token
-    restored_text = re.sub(
-        TOKEN_PATTERN,
-        replace_token,
-        redacted_text
-    )
-    return restored_text
-
-# ==========================================
 # Wrapper
 # ==========================================
 def replace_sensitive_data(text, data):
