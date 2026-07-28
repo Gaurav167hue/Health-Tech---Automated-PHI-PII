@@ -22,7 +22,7 @@
 #         "text": "John Smith visited Hospital John Smith visited Clinic",
 # }
 
-# Dumy Data for LCS + Counter
+# Dumy Data Progressive Anchor Matching
 DUMMY_TEXT_NLP = {
         "type" : "Patient PERSON visits NAME Hospital in ADDRESS",
         "text": "Patient John Smith visits Ibnu Sina Hospital in New York",

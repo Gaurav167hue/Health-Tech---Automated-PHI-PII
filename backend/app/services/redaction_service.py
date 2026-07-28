@@ -39,12 +39,12 @@ class RedactionService:
             # regex
             # DUMMY_DATA_REGEX
             # DUMMY_ENTITIES_REGEX
-            # DUMMY_TEXT_REGEX
+            DUMMY_TEXT_REGEX
 
             # nlp
             # DUMY_DATA_NLP
             # DUMMY_ENTITIES_NLP
-            DUMMY_TEXT_NLP
+            # DUMMY_TEXT_NLP
             )
         return {
             "original_text": text,

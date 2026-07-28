@@ -434,8 +434,11 @@
 
 # Version Progressive Anchor Matching
 import re
+from app.database.redis_client import redis_client
+from app.repositories.token_repositories import TokenRepository
 
 TOKEN_PATTERN = r"[A-Z]+_\d{3}"
+token_repository = TokenRepository()
 
 
 # ==========================================
@@ -551,25 +554,41 @@ def build_mapping(original_text, template_text):
 # ==========================================
 def replace_sensitive_data(text, data):
     if isinstance(data, list):
-        return replace_from_entities(
+        redacted, mapping = replace_from_entities(
             text,
             data
         )
-    
-    if isinstance(data, dict):
-        original = data["text"]
-        template = data["type"]
-        redacted = generate_redacted_template(
-            template
+
+        token_repository.save_many(
+            mapping
         )
-        mapping = build_mapping(
-            original,
-            redacted
-        )
+
         return (
             redacted,
             mapping
         )
+    if isinstance(data, dict):
+        original = data["text"]
+        template = data["type"]
+
+        redacted = generate_redacted_template(
+            template
+        )
+
+        mapping = build_mapping(
+            original,
+            redacted
+        )
+
+        token_repository.save_many(
+            mapping
+        )
+
+        return (
+            redacted,
+            mapping
+        )
+
     raise ValueError(
         "Unsupported data format"
     )
