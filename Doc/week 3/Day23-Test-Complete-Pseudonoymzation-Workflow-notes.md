@@ -1,9 +1,9 @@
-so I just documented in week 3
+Here is the documentation of my activities during the third week:
 
-First Day, I just learned about Pseudonymization, Token Mapping, Dictionaries for Set Up Project in Member 3 and just build dumy data and i just put dumy data in backend section, in app section, in mock section, just have 2 section for store and restore just have for nlp with regex
-Second Day, I just how to impelemented replacement sensitive data, so you can acces my proof in image section, in ReplaceSensitiveData section, in nlp wiith regex becauase i just doing using dumy data entities and dumy data text
-Third Day, I just how to implemented Token Mapping if I using text, so you can access my proof in image section, in TokenMapping section, in nlp with regex because i just doing using dumy data entities and dumy data text
-The Four Day, I just learned about Redism because Redis running in Redis Server using Docker, so why i pick Redis Server? because Redis Server its Database temporary in RAM, so you can access fastly if need for chache or anything else.
-The Five Day, I just implemented how to store Token Mapping to Redis Server using Docker, so you access my proof in Images Section, in StoreTokenMapping section just only using dumy data text
-The Six Day, I just implemented how to restore Token Mapping from Redis Server using Docker, so you can access my proff in Image Section, in RestoreTokenMapping section dont using dumy data because now i just using regex token matching
-And Now Im completed all task responsibilities for Member 3
+Day One: I studied pseudonymization, token mapping, and project preparation for the _Member 3_ role. I created dummy data and placed it within the _backend_, _app_, and _mock_ components, focusing on _store_ and _restore_ functions utilizing NLP and _regex_.
+Day Two: I learned how to implement sensitive data replacement. Evidence of this can be seen in the images under the `ReplaceSensitiveData` section (using dummy data entities and text).
+Day Three: I learned how to implement token mapping for text. Evidence of this can be seen in the images under the `TokenMapping` section (using dummy data entities and text).
+Day Four: I studied Redis running on a server via Docker. Redis Server was chosen because it operates as an in-memory (RAM) database, enabling extremely fast data access for caching and other purposes.
+Day Five: I implemented the storage of token mappings to the Redis Server using Docker. Evidence of this can be seen in the images under the `StoreTokenMapping` section (using dummy data text).
+Day Six: I implemented the restoration of token mappings from the Redis Server using Docker. Evidence of this can be seen in the images under the `RestoreTokenMapping` section (moving beyond dummy data to use _regex_-based token matching).
+I have now completed all assigned responsibilities for the _Member 3_ role.
