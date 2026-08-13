@@ -30,10 +30,11 @@ Responsibilities
    3. spaCy
    4. Microsoft Presidio
 
-| Date | Activity | Commit |
-| ---- | -------- | ------ |
+| Date    | Activity                                            | Commit                                           |
+| ------- | --------------------------------------------------- | ------------------------------------------------ |
+| July 20 | Day 8 - Learn Regular Expressions for PII Detection | docs: add regex learning notes for PII detection |
 
-<!-- | July 27    | Day 17 - Learn Pseudonymization & Token Mapping Concepts and build dumy data | docs: add pseudonymization and token mapping study notes and build dumy data      |
+<!--
 | July 28    | Day 18 - Implement Sensitive Data Replacement                                | feat: implement sensitive data replacement with pseudonymization                  |
 | July 29    | Day 19 - Implement Token Mapping and Mapping Dictionary                      | feat: implement token mapping using dictionary                                    |
 | July 30    | Day 20 - Learn Redis                                                         | docs: configure Redis for secure token storage                                    |
