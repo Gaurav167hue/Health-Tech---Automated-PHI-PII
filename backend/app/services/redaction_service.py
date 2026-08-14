@@ -1,6 +1,7 @@
 from app.exceptions import invalid_request
 from app.logger import logger
 from app.services.nlp_service import NLPService
+from app.services.detection_service import DetectionService
 
 
 class RedactionService:
@@ -13,7 +14,11 @@ class RedactionService:
         if not text.strip():
             invalid_request("Input text cannot be empty.")
 
+        # Member 1 
         redacted = NLPService.redact(text)
+
+        # Member 2
+        entities = DetectionService.detect(text)
 
         return {
             "original_text": text,

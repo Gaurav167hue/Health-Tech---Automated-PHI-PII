@@ -33,9 +33,9 @@ Responsibilities
 | Date    | Activity                                            | Commit                                           |
 | ------- | --------------------------------------------------- | ------------------------------------------------ |
 | July 20 | Day 8 - Learn Regular Expressions for PII Detection | docs: add regex learning notes for PII detection |
+| July 21 | Day 9 - Implement Phone Number Detection            | feat: add phone number detection using regex     |
 
 <!--
-| July 28    | Day 18 - Implement Sensitive Data Replacement                                | feat: implement sensitive data replacement with pseudonymization                  |
 | July 29    | Day 19 - Implement Token Mapping and Mapping Dictionary                      | feat: implement token mapping using dictionary                                    |
 | July 30    | Day 20 - Learn Redis                                                         | docs: configure Redis for secure token storage                                    |
 | July 31    | Day 21 - Store Token Mapping in Redis                                        | feat: store pseudonym mappings in Redis                                           |

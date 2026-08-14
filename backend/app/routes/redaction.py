@@ -4,8 +4,13 @@ from app.schemas.request_response import (
     RedactResponse,
     RestoreRequest,
     RestoreResponse,
+    DetectionEnttity,
+    DetectionResponse,
 )
 from app.services.redaction_service import RedactionService
+
+# member 2
+from app.services.detection_service import DetectionService
 
 router = APIRouter(
     prefix="/api/v1",
@@ -35,3 +40,18 @@ def redact_text(request: RedactRequest):
 def restore_text(request: RestoreRequest):
     result = RedactionService.restore_text(request.text)
     return RestoreResponse(**result)
+
+# member 2
+@router.post(
+    "/detect",
+    response_model=DetectionResponse,
+    status_code= status.HTTP_200_OK,
+    summary="Detect PHI/PII",
+    description="Detect PHI/PII Entity from Text"
+)
+def detect_text(request: RedactRequest):
+    result = DetectionService.detect(request.text)
+    return DetectionResponse(
+        entity=  result,
+        status= "succes"
+    )
