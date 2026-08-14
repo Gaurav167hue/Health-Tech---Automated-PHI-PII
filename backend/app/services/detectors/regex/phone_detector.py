@@ -10,6 +10,35 @@ phone_pattern = re.compile(
 # Pengecualian awalan lokal (Indonesia)
 INDO_LOCAL = re.compile(r'^(?:\+62|62|0)(\d+)$')
 
+def calculate_phone_confidence(raw: str, normalized: str) -> float:
+    score = 0.0
+
+    digits = re.sub(r"\D", "", raw)
+
+    # 1. Jumlah digit berada pada range nomor telepon yang wajar
+    if 8 <= len(digits) <= 15:
+        score += 0.40
+    elif len(digits) >= 8:
+        score += 0.20
+
+    # 2. Memiliki prefix Indonesia yang valid
+    if normalized.startswith("+62"):
+        score += 0.25
+
+    # 3. Format internasional
+    elif raw.strip().startswith(("+", "00")):
+        score += 0.25
+
+    # 4. Nomor lokal Indonesia
+    elif raw.strip().startswith("0"):
+        score += 0.25
+
+    # 5. Format hanya terdiri dari digit dan separator telepon
+    if re.fullmatch(r"[\d\s().+\-]+", raw.strip()):
+        score += 0.15
+
+    return round(min(score, 1.0), 2)
+
 def normalize_phone(raw: str) -> str:
     # Hapus semua karakter kecuali + dan digit
     s = re.sub(r'[^\d+]', '', raw)
@@ -48,13 +77,14 @@ def detect_phone(text: str):
             continue
         # Normalisasi
         normalized = normalize_phone(raw)
+        confidence = calculate_phone_confidence(raw, normalized)
         results.append({
             "start": start,
             "end": end,
             "text": raw,
             "entity_type": "PHONE",
             "normalized": normalized,
-            "confidence": 0.99
+            "confidence": confidence
         })
     return results
 
