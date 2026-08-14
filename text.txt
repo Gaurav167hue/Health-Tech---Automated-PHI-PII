@@ -3,3 +3,6 @@ please contact +1 212-555-0198
 
 email detection
 send an email to john@gmail.com
+
+date detection
+Patient visited the hospital on 12/07/2026
