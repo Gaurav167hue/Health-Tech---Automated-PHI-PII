@@ -34,10 +34,10 @@ Responsibilities
 | ------- | --------------------------------------------------- | ------------------------------------------------ |
 | July 20 | Day 8 - Learn Regular Expressions for PII Detection | docs: add regex learning notes for PII detection |
 | July 21 | Day 9 - Implement Phone Number Detection            | feat: add phone number detection using regex     |
+| July 22 | Day 10 - Implement Email Detection                  | feat: add email address detection using regex    |
 
 <!--
-| July 29    | Day 19 - Implement Token Mapping and Mapping Dictionary                      | feat: implement token mapping using dictionary                                    |
-| July 30    | Day 20 - Learn Redis                                                         | docs: configure Redis for secure token storage                                    |
-| July 31    | Day 21 - Store Token Mapping in Redis                                        | feat: store pseudonym mappings in Redis                                           |
-| Agustus 01 | Day 22 - Restore Original Sensitive Data                                     | feat: implement reverse token mapping from Redis                                  |
-| Agustus 02 | Day 23 - Test Complete Pseudonymization Flow                                 | test: validate end-to-end pseudonymization workflow and documenentation in week 3 | -->
+| July 23 | Day 11 - Implement Date Detection                   | feaet: add date detection using regex             |
+| July 24 | Day 12 - Implement ID Detection                     | feat: add id detection using regex                |
+| July 25 | Day 13 - Implement Name Detection                   | feat: add name detection using Microsoft Presidio |
+| July 26 | Day 23 - Uknown                                     | test: uknown and documenentation in week 3        | -->
