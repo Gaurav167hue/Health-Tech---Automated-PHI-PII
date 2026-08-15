@@ -6,3 +6,6 @@ send an email to john@gmail.com
 
 date detection
 Patient visited the hospital on 12/07/2026
+
+id detection
+Patient Budi Santoso, a 45-year-old male, visited the outpatient department on 01/08/2026. His patient ID is PAT-20260801 and his medical record number is MRN-456782.
