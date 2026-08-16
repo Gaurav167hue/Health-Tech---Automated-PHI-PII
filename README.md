@@ -1,3 +1,10 @@
+Technologiesssss
+  1. Python
+  2. FatAPI
+  3. spaCY
+  4. Microsoft Presidio
+  5. Regex
+  6. Redis
 Responsibilities
 1. Integrate all modules
 2. End to end testing
