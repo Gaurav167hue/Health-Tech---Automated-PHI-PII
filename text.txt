@@ -12,3 +12,6 @@ Patient Budi Santoso, a 45-year-old male, visited the outpatient department on 0
 
 name detection
 Patient John Smith was examined by Dr. Michael. He lives at Jl. Sudirman No. 10 and has diabetes.
+
+final pipeline
+Patient John Smith was examined by Dr. Michael. He lives at Jl. Sudirman No. 10, Jakarta. His email is john@gmail.com and phone is +62 812-3456-7890. He has diabetes and was born on 15 July 1995. Patient ID is PAT-123456.
