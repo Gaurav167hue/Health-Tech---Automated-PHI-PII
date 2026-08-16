@@ -30,14 +30,14 @@ Responsibilities
    3. spaCy
    4. Microsoft Presidio
 
-| Date    | Activity                                            | Commit                                           |
-| ------- | --------------------------------------------------- | ------------------------------------------------ |
-| July 20 | Day 8 - Learn Regular Expressions for PII Detection | docs: add regex learning notes for PII detection |
-| July 21 | Day 9 - Implement Phone Number Detection            | feat: add phone number detection using regex     |
-| July 22 | Day 10 - Implement Email Detection                  | feat: add email address detection using regex    |
-| July 23 | Day 11 - Implement Date Detection                   | feat: add date detection using regex             |
-| July 24 | Day 12 - Implement ID Detection                     | feat: add id detection using regex               |
+| Date    | Activity                                            | Commit                                            |
+| ------- | --------------------------------------------------- | ------------------------------------------------- |
+| July 20 | Day 8 - Learn Regular Expressions for PII Detection | docs: add regex learning notes for PII detection  |
+| July 21 | Day 9 - Implement Phone Number Detection            | feat: add phone number detection using regex      |
+| July 22 | Day 10 - Implement Email Detection                  | feat: add email address detection using regex     |
+| July 23 | Day 11 - Implement Date Detection                   | feat: add date detection using regex              |
+| July 24 | Day 12 - Implement ID Detection                     | feat: add id detection using regex                |
+| July 25 | Day 13 - Implement Name Detection                   | feat: add name detection using Microsoft Presidio |
 
 <!--
-| July 25 | Day 13 - Implement Name Detection                   | feat: add name detection using Microsoft Presidio |
 | July 26 | Day 23 - Uknown                                     | test: uknown and documenentation in week 3        | -->
