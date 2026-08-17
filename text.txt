@@ -1,0 +1,17 @@
+phone detection
+please contact +1 212-555-0198
+
+email detection
+send an email to john@gmail.com
+
+date detection
+Patient visited the hospital on 12/07/2026
+
+id detection
+Patient Budi Santoso, a 45-year-old male, visited the outpatient department on 01/08/2026. His patient ID is PAT-20260801 and his medical record number is MRN-456782.
+
+name detection
+Patient John Smith was examined by Dr. Michael. He lives at Jl. Sudirman No. 10 and has diabetes.
+
+final pipeline
+Patient John Smith was examined by Dr. Michael. He lives at Jl. Sudirman No. 10, Jakarta. His email is john@gmail.com and phone is +62 812-3456-7890. He has diabetes and was born on 15 July 1995. Patient ID is PAT-123456.

@@ -1,6 +1,7 @@
 from app.exceptions import invalid_request
 from app.logger import logger
 from app.services.nlp_service import NLPService
+from app.services.detection_service import DetectionService
 
 # temporary only member 3
 from app.services.pseudonym_service import (
@@ -54,6 +55,12 @@ class RedactionService:
             # DUMMY_ENTITIES_NLP
             DUMMY_TEXT_NLP
             )
+        # Member 1 
+        redacted = NLPService.redact(text)
+
+        # Member 2
+        entities = DetectionService.detect(text)
+
         return {
             "original_text": text,
             "redacted_text": redacted_text,

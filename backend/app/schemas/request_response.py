@@ -53,3 +53,15 @@ class RestoreResponse(BaseModel):
     status: str = Field(
         example="success"
     )
+
+class DetectionEnttity(BaseModel):
+    start : int
+    end : int
+    text : str
+    entity_type : str
+    normalized : str
+    confidence : float
+
+class DetectionResponse(BaseModel):
+    entity : list[DetectionEnttity]
+    status : str
