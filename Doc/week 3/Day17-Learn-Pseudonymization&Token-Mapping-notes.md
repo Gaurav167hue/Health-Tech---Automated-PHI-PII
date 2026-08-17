@@ -1,0 +1,9 @@
+Today, I'll create dummy data and learn about pseudonymization, token mapping, and dictionaries.
+
+Data pseudonymization is a data privacy measure used solely for reporting, analysis, LLM applications, and anything else needed in data, to protect data from its original state. Pseudonymization is simply a data protection technique, the process of linking data back to an individual without additional, secure information. For example, what's the difference between pseudonymization and anonymization? Anonymization can only protect data permanently, not simply to restore it to the original data. If pseudonymization provides temporary data protection, why is it temporary? Because the data is used for reporting, analysis, or whatever else is needed. Therefore, if used for any activity, the protected data can be restored to its original state. Common pseudonymization techniques include scrambling, encryption (using a key pair, which requires additional information), masking, tokenization (token mapping), and data bluring.
+
+Token mapping is simply a tokenization technique derived from pseudonymization; for example, tokenization simply replaces sensitive data with a token that can be mapped back to the original data.
+
+Dictionary is a key-value storage or can be called a key-value storage that has an associative mapping, so in the dictionary there is a unique key represented by a value, in the dictionary there is only a general type for searching, when searching it only searches for the key because the key is unique, so why only search for the key? Because if the key is found, then the value is also found, also common type another for updated, so only the updated value is found unique key, and finally the general type for deletion, which is deleting the key along with its value in the dictionary.
+
+Data dumy i put in folder backend to app to mock and you can see dumy_entities.py and dumy_text.py

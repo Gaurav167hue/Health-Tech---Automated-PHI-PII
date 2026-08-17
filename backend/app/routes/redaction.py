@@ -17,7 +17,6 @@ router = APIRouter(
     tags=["Redaction"]
 )
 
-
 @router.post(
     "/redact",
     response_model=RedactResponse,
@@ -28,7 +27,6 @@ router = APIRouter(
 def redact_text(request: RedactRequest):
     result = RedactionService.redact_text(request.text)
     return RedactResponse(**result)
-
 
 @router.post(
     "/restore",
