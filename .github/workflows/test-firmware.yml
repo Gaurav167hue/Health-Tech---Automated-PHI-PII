@@ -23,4 +23,4 @@ jobs:
         run: pip install pytest
 
       - name: Run firmware tests
-        run: pytest firmware/test_version.py -v
+        run: python -m pytest firmware/test_version.py -v
