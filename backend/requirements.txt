@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-dotenv
+redis[hiredis]
+spacy
+click
+presidio-analyzer
+presidio-anonymizer
+python-dotenv

@@ -17,6 +17,14 @@ class RedactResponse(BaseModel):
     redacted_text: str = Field(
         example="Patient_001 visited Hospital_001 on <DATE>."
     )
+    # token mapping
+    token_mapping: dict[str, str] = Field(
+        example={
+            "PERSON_001": "John Smith",
+            "DATE_001": "12/07/2026",
+            "HOSPITAL_001": "AIIMS Delhi"
+        }
+    )
     status: str = Field(
         example="success"
     )
@@ -32,9 +40,28 @@ class RestoreRequest(BaseModel):
 
 
 class RestoreResponse(BaseModel):
+    token_mapping: dict[str, str] = Field(
+        example={
+            "PERSON_001": "John Smith",
+            "DATE_001": "12/07/2026",
+            "HOSPITAL_001": "AIIMS Delhi"
+        }
+    )
     restored_text: str = Field(
         example="John Smith visited AIIMS Delhi."
     )
     status: str = Field(
         example="success"
     )
+
+class DetectionEnttity(BaseModel):
+    start : int
+    end : int
+    text : str
+    entity_type : str
+    normalized : str
+    confidence : float
+
+class DetectionResponse(BaseModel):
+    entity : list[DetectionEnttity]
+    status : str
