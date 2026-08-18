@@ -1,5 +1,5 @@
-from version import is_newer_version
-from rollback import allow_firmware_update
+from firmware.version import is_newer_version
+from firmware.rollback import allow_firmware_update
 
 
 def test_new_version():
