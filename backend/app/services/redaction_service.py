@@ -2,37 +2,34 @@ from app.exceptions import invalid_request
 from app.logger import logger
 from app.services.detection_service import DetectionService
 
-# temporary only member 3
 from app.services.pseudonym_service import (
-    replace_sensitive_data, 
+    replace_sensitive_data,
     restore_sensitive_data
 )
 
-# store
-# regex
 
 class RedactionService:
 
-   @staticmethod
-def redact_text(text: str):
+    @staticmethod
+    def redact_text(text: str):
 
-    logger.info("Redaction request received")
+        logger.info("Redaction request received")
 
-    if not text.strip():
-        invalid_request("Input text cannot be empty.")
+        if not text.strip():
+            invalid_request("Input text cannot be empty.")
 
-    # Member 2 + Member 3
-    entities = DetectionService.detect(text)
+        # Member 2 + Member 3
+        entities = DetectionService.detect(text)
 
-    # Member 4 - Pseudonymization + Token Mapping
-    redacted_text, token_mapping = replace_sensitive_data(
-        text,
-        entities
-    )
+        # Member 4 - Pseudonymization + Token Mapping
+        redacted_text, token_mapping = replace_sensitive_data(
+            text,
+            entities
+        )
 
-    return {
-        "original_text": text,
-        "redacted_text": redacted_text,
-        "token_mapping": token_mapping,
-        "status": "success"
-    }
+        return {
+            "original_text": text,
+            "redacted_text": redacted_text,
+            "token_mapping": token_mapping,
+            "status": "success"
+        }
